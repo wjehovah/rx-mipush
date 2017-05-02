@@ -1,28 +1,25 @@
-<!--https://greenify.github.io/README.chs.html-->
 <prescriptions xmlns="http://greenify.github.io/schemas/prescription/v3">
     <prescription sender="other-app" type="service">
         <intent-filter>
-            <action name="com.xiaomi.mipush.sdk.WAKEUP" />
-            <action name="cn.jpush.android.intent.DaemonService" />
-            <action name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
-            <action name="cn.jpush.android.intent.REGISTER" />
-            <action name="cn.jpush.android.intent.REPORT" />
-            <action name="cn.jpush.android.intent.PushService" />
-            <action name="cn.jpush.android.intent.PUSH_TIME" />
-            <action name="cn.jpush.android.ui.PushActivity" />
-            <action name="cn.jpush.android.intent.REGISTRATION" />
-            <action name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
-            <action name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
-            <action name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
-            <action name="cn.jpush.android.intent.CONNECTION" />
+            <action name="com.xiaomi.mipush.sdk.WAKEUP"/>
+            <action name="cn.jpush.android.intent.DaemonService"/>
+            <action name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY"/>
+            <action name="cn.jpush.android.intent.REGISTER"/>
+            <action name="cn.jpush.android.intent.REPORT"/>
+            <action name="cn.jpush.android.intent.PushService"/>
+            <action name="cn.jpush.android.intent.PUSH_TIME"/>
+            <action name="cn.jpush.android.ui.PushActivity"/>
+            <action name="cn.jpush.android.intent.REGISTRATION"/>
+            <action name="cn.jpush.android.intent.MESSAGE_RECEIVED"/>
+            <action name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/>
+            <action name="cn.jpush.android.intent.NOTIFICATION_OPENED"/>
+            <action name="cn.jpush.android.intent.CONNECTION"/>
         </intent-filter>
-
-
     </prescription>
-    <prescription class="com.igexin.sdk.PushService" sender="other" type="service" />
+    <prescription class="com.igexin.sdk.PushService" sender="other" type="service"/>
     <prescription class="com.baidu.sapi2.share.ShareService" type="service">
         <intent-filter>
-            <action name="baidu.intent.action.account.SHARE_SERVICE" />
+            <action name="baidu.intent.action.account.SHARE_SERVICE"/>
         </intent-filter>
     </prescription>
 </prescriptions>
