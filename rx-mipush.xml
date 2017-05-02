@@ -1,4 +1,3 @@
-<!--https://greenify.github.io/README.chs.html-->
 <prescriptions xmlns="http://greenify.github.io/schemas/prescription/v3">
     <prescription sender="other-app" type="service">
         <intent-filter>
@@ -16,8 +15,6 @@
             <action name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
             <action name="cn.jpush.android.intent.CONNECTION" />
         </intent-filter>
-
-
     </prescription>
     <prescription class="com.igexin.sdk.PushService" sender="other" type="service" />
     <prescription class="com.baidu.sapi2.share.ShareService" type="service">
