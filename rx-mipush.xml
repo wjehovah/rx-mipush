@@ -1,5 +1,5 @@
 <prescriptions xmlns="http://greenify.github.io/schemas/prescription/v3">
-    <prescription sender="other-app" type="service|broadcast|activity">
+    <prescription type="service|broadcast|activity" sender="other-app">
         <intent-filter>
             <action name="com.xiaomi.mipush.sdk.WAKEUP"/>
             <action name="cn.jpush.android.intent.DaemonService"/>
@@ -16,8 +16,8 @@
             <action name="cn.jpush.android.intent.CONNECTION"/>
         </intent-filter>
     </prescription>
-    <prescription class="com.igexin.sdk.PushService" sender="other" type="service"/>
-    <prescription class="com.baidu.sapi2.share.ShareService" type="service">
+    <prescription type="service" class="com.igexin.sdk.PushService" sender="other" />
+    <prescription type="service" class="com.baidu.sapi2.share.ShareService" >
         <intent-filter>
             <action name="baidu.intent.action.account.SHARE_SERVICE"/>
         </intent-filter>
