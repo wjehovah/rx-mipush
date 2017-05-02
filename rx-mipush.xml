@@ -1,8 +1,14 @@
+<!--https://greenify.github.io/README.chs.html-->
 <prescriptions xmlns="http://greenify.github.io/schemas/prescription/v3">
-  <prescription type="service" sender="other-app">
-    <intent-filter>
-      <action name="com.xiaomi.mipush.sdk.WAKEUP" />
-    </intent-filter>
-  </prescription>
-  <prescription type="service" class="com.xiaomi.push.service.XMJobService" sender="other" />
+    <prescription sender="other-app" type="service">
+        <intent-filter>
+            <action name="com.xiaomi.mipush.sdk.WAKEUP" />
+        </intent-filter>
+    </prescription>
+    <prescription class="com.igexin.sdk.PushService" sender="other" type="service" />
+    <prescription class="com.baidu.sapi2.share.ShareService" type="service">
+        <intent-filter>
+            <action name="baidu.intent.action.account.SHARE_SERVICE" />
+        </intent-filter>
+    </prescription>
 </prescriptions>
