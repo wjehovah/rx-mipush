@@ -52,6 +52,30 @@
             <action android:name="com.alibaba.sdk.android.push.ChannelService" />
         </intent-filter>
     </prescription>
-    
-    <!--以上阿里云 参考阿里云集成文档 https://help.aliyun.com/document_detail/30064.html?spm=5176.doc30056.2.2.2pc23z-->
+
+    <!--以上阿里云 参考极光集成文档 https://help.aliyun.com/document_detail/30064.html?spm=5176.doc30056.2.2.2pc23z-->
+
+    <prescription sender="other" type="broadcast">
+        <intent-filter>
+            <action android:name="com.taobao.accs.EventReceiver" />
+            <action android:name="com.taobao.accs.ServiceReceiver" />
+            <action android:name="com.taobao.agoo.AgooCommondReceiver" />
+            <action android:name="com.umeng.message.NotificationProxyBroadcastReceiver" />
+        </intent-filter>
+    </prescription>
+    <prescription sender="other" type="service">
+        <intent-filter>
+            <action android:name="com.taobao.accs.ChannelService" />
+            <action android:name="com.taobao.accs.data.MsgDistributeService" />
+            <action android:name="com.taobao.accs.ChannelService$KernelService" />
+            <action android:name="org.android.agoo.accs.AgooService" />
+            <action android:name="com.umeng.message.UmengIntentService" />
+            <action android:name="com.umeng.message.XiaomiIntentService" />
+            <action android:name="com.umeng.message.UmengMessageIntentReceiverService" />
+            <action android:name="com.umeng.message.UmengMessageCallbackHandlerService" />
+            <action android:name="com.umeng.message.UmengDownloadResourceService" />
+        </intent-filter>
+    </prescription>
+
+    <!--以上友盟推送-->
 </prescriptions>
