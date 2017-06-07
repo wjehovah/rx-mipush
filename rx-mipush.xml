@@ -1,11 +1,11 @@
 <prescriptions xmlns="http://greenify.github.io/schemas/prescription/v3">
-    <prescription sender="other-app" type="broadcast">
+    <prescription sender="other" type="broadcast">
         <intent-filter>
             <action android:name="cn.jpush.android.service.PushReceiver" />
             <action android:name=" cn.jpush.android.service.AlarmReceiver" />
         </intent-filter>
     </prescription>
-    <prescription sender="other-app" type="service">
+    <prescription sender="other" type="service">
         <intent-filter>
             <action android:name="cn.jpush.android.service.PushService" />
             <action android:name="cn.jpush.android.service.DaemonService" />
@@ -13,10 +13,31 @@
         </intent-filter>
     </prescription>
 
-    <prescription sender="other-app" type="activity">
+    <prescription sender="other" type="activity">
         <intent-filter>
             <action android:name="cn.jpush.android.ui.PushActivity" />
             <action android:name="cn.jpush.android.ui.PopWinActivity" />
         </intent-filter>
     </prescription>
+    <!--以上极光推送 参考极光集成文档 https://docs.jiguang.cn/jpush/client/Android/android_guide/-->
+    <prescription sender="other" type="broadcast">
+        <intent-filter>
+            <action android:name="com.igexin.sdk.PushReceiver" />
+            <action android:name="com.igexin.download.DownloadReceiver" />
+        </intent-filter>
+    </prescription>
+    <prescription sender="other" type="service">
+        <intent-filter>
+            <action android:name="com.igexin.sdk.PushService" />
+            <action android:name="com.igexin.download.DownloadService" />
+        </intent-filter>
+    </prescription>
+
+    <prescription sender="other" type="activity">
+        <intent-filter>
+            <action android:name="com.igexin.sdk.PushActivity" />
+            <action android:name="com.igexin.sdk.GActivity" />
+        </intent-filter>
+    </prescription>
+    <!--以上个推 参考集成文档 http://docs.getui.com/mobile/android/androidstudio/#3-sdk-->
 </prescriptions>
